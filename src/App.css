@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+
+:root{
+  --sidebar-flex:1.5;
+  --condiv-flex:6;
+  --fontsize-p:1rem;
+  --fontsize-nav:1.6rem;
+  --typing-font:2rem;
+}
+*
+{
+  margin:0;
+  padding: 0;
+}
+body{
+ margin:0 auto;
+ padding:0px;
+ font-family: Georgia, "Times New Roman", Times, serif;
+}
+.App
+{
+  display: flex;
+  width: 100vw;
+  min-height:100vh;
+}
+nav
+{
+  padding:60px 30px 0px 30px ;
+  text-align: center;
+  /*flex:var(--sidebar-flex);*/
+  background: gray;
+ 
+
+  
+}
+.condiv
+{
+  text-align: center;
+  flex:var(--condiv-flex);
+}
+
+.home
+{
+  
+ display:inline-flex ;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+.profilepic
+{
+  border-radius: 50%;
+  display: block;
+  max-height:250px;
+  max-width: 250px;
+   
+}
+.typingeffect
+{
+  font-size: var(--typing-font);
+  font-family:sans-serif;
+  
+}
+
+nav ul{
+  font-size:var(--fontsize-nav) ;
+ 
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: white !important;
+  }  
+  
+  a
+  {
+  text-decoration: none;
+  color: #ffffff;
+  }
+ .subtopic
+{
+  margin:10px 10px 30px 10px !important;
+  text-align: center;
+  
+}
+h1,h3,h4{
+  margin:10px;
+  text-align: center;
+}
+  
+h4{
+  text-align: center;
+}
+p{
+font-size:1em;
+line-height: 1.5;
+margin:20px auto;
+max-width:70%;
+}
+
+.widecard
+{
+  border:0px solid #9a9b9c;
+  display: inline-flex;
+  margin:30px 0px 30px 0px;
+}
+.widecard:hover
+{
+background:lightgray; 
+}
+.social
+{
+margin-top:40px;
+display: flex;
+}
+.social i
+{
+padding-right: 30px;
+font-size: 25px;
+color: #9a9b9c;
+}
+.social i:hover
+{
+color: #ffffff;
+}
+.active
+{
+  font-weight: bolder;
+}
+.skills ul li
+  {
+    background: #eee;
+    border-radius:4px;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+.skills ul li:hover{
+  margin: 20px;
+  box-shadow: 0px 10px 10px #888888;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px){
+  :root {
+    --fontsize-nav:1rem;
+    --sidebar-flex:0;
+    --typing-font:2rem;
+  }
+}
+
+  .App
+  {
+    flex-direction: column;
+  }
+  .sidebar
+  {
+    padding:20px;
+    
+  }
+  .condiv
+  {
+    padding:20px ;
+  }
+  
+  nav ul
+  {
+  display:inline-flex;
+  font-size:1.5em;
+  text-align: center;
+  padding: 20px;
+  }
+  nav ul li
+  {
+    margin: 20px;  
+    
+  }
+ 
+ .social i
+ {
+ padding-right: 30px;
+ font-size: 25px;
+ color: #9a9b9c;
+ }
+ .social i:hover
+ {
+ color: #333333;
+ }
